@@ -1,0 +1,24 @@
+# Fall Detection Pipeline - Dependencies
+# For training (GPU recommended)
+ultralytics>=8.3.0
+roboflow>=1.1.0
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+PyYAML>=6.0
+Pillow>=10.0.0
+
+# For TFLite export & Vela compilation
+tensorflow>=2.15.0
+onnx>=1.14.0
+onnxruntime>=1.15.0
+ethos-u-vela>=3.10.0
+
+# For SSCMA (optional, Seeed's official framework)
+# pip install -e git+https://github.com/Seeed-Studio/ModelAssistant.git
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+tensorboard>=2.14.0

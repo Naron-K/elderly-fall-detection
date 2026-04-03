@@ -1,0 +1,38 @@
+# Local Testing Infrastructure Requirements
+# For laptop camera testing and model comparison
+
+# Core dependencies
+ultralytics>=8.0.0        # YOLO models (v5, v8)
+opencv-python>=4.8.0      # Webcam access and video processing
+numpy>=1.24.0             # Numerical operations
+torch>=2.0.0              # PyTorch (CPU or GPU)
+torchvision>=0.15.0       # PyTorch vision utilities
+
+# Optional: GPU support (uncomment if you have CUDA)
+# torch>=2.0.0+cu118
+# torchvision>=0.15.0+cu118
+
+# Testing and metrics
+pytest>=7.4.0             # Testing framework
+pytest-cov>=4.1.0         # Coverage reporting
+pytest-mock>=3.11.0       # Mocking for tests
+
+# Data handling
+pandas>=2.0.0             # Data analysis
+roboflow>=1.1.0           # Dataset download
+pyyaml>=6.0               # Parse/write data.yaml
+
+# Pose verification (false positive reduction)
+mediapipe>=0.10.0         # Human pose estimation for fall verification
+
+# Visualization
+matplotlib>=3.7.0         # Plotting
+seaborn>=0.12.0           # Statistical visualization
+
+# Serial communication (for Grove V2 integration later)
+pyserial>=3.5             # Serial port communication
+
+# Model export (for deploying to Grove V2)
+onnx>=1.14.0              # ONNX export
+onnxruntime>=1.15.0       # ONNX inference
+tensorflow>=2.13.0        # TFLite export
