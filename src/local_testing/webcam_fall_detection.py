@@ -145,7 +145,7 @@ def draw_results(frame, results, is_fall, stats):
         h, w = annotated_frame.shape[:2]
         cv2.rectangle(annotated_frame, (0, 0), (w, 80), (0, 0, 255), -1)
         cv2.putText(annotated_frame, "⚠️ FALL DETECTED ⚠️", (w//2 - 150, 50),
-                   cv2.FONT_HERSHEY_BOLD, 1.2, (255, 255, 255), 3)
+                   cv2.FONT_HERSHEY_DUPLEX, 1.2, (255, 255, 255), 3)
 
     # Draw stats overlay
     y_offset = 30 if not is_fall else 100
